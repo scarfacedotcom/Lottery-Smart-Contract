@@ -19,6 +19,7 @@ async function main() {
   console.log(`The Lottery contract has been deployed to ${lottery.address}`);
 
   await lottery.enterLottery({value: 10})
+  await lottery.endLottery()
 }
 
 // We recommend this pattern to be able to use async/await everywhere
